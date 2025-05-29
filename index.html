@@ -1,0 +1,234 @@
+index.html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download do Meu Servidor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: #4dabf7;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo {
+            font-size: 5rem;
+            margin: 20px 0;
+            color: #4dabf7;
+            text-shadow: 0 0 15px rgba(77, 171, 247, 0.7);
+        }
+        
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 15px 0;
+            max-width: 600px;
+        }
+        
+        .feature-list {
+            text-align: left;
+            margin: 25px auto;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .feature-list li {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            color: #4dabf7;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(to right, #4dabf7, #3a7bd5);
+            color: white;
+            padding: 18px 45px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 30px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(to right, #3a7bd5, #4dabf7);
+        }
+        
+        .download-btn:active {
+            transform: translateY(1px);
+        }
+        
+        .version {
+            font-size: 1rem;
+            color: #aaa;
+            margin-top: 10px;
+        }
+        
+        .instructions {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: left;
+            max-width: 600px;
+        }
+        
+        .instructions h3 {
+            color: #4dabf7;
+            margin-bottom: 15px;
+        }
+        
+        .step {
+            display: flex;
+            margin: 15px 0;
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            background: #4dabf7;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        footer {
+            margin-top: 40px;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        .security-note {
+            color: #ff6b6b;
+            font-weight: bold;
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ff6b6b;
+            border-radius: 8px;
+            max-width: 600px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .download-btn {
+                padding: 15px 35px;
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <h1>Meu Servidor Premium</h1>
+        
+        <p>O software essencial para gerenciar seu servidor com eficiência máxima.</p>
+        
+        <div class="feature-list">
+            <h3>Recursos Principais:</h3>
+            <ul>
+                <li>Gerenciamento simplificado de servidores</li>
+                <li>Monitoramento em tempo real</li>
+                <li>Segurança avançada contra ataques</li>
+                <li>Atualizações automáticas</li>
+                <li>Suporte técnico 24/7</li>
+            </ul>
+        </div>
+        
+        <div class="security-note">
+             Seu navegador pode alertar sobre este download. Isso é normal para arquivos .exe.
+            Clique em "Manter" ou "Manter arquivo" para prosseguir com o download.
+        </div>
+        
+        <!-- LINK DE DOWNLOAD PRONTO PARA SEU ARQUIVO -->
+        <a href="https://shre.ink/eb7F" 
+           class="download-btn" 
+           download="MeuServidor.exe">
+            BAIXAR AGORA
+        </a>
+        <div class="version">Versão 1.0.0 - Tamanho: 15.4 MB</div>
+        
+        <div class="instructions">
+            <h3>Instruções de Instalação:</h3>
+            <div class="step">
+                <div class="step-number">1</div>
+                <div>Clique no botão "BAIXAR AGORA" acima</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div>Quando o download completar, abra o arquivo .exe</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div>Siga as instruções do instalador</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div>Execute o programa e aproveite!</div>
+            </div>
+        </div>
+        
+        <footer>
+            © 2023 Meu Servidor Premium. Todos os direitos reservados.
+        </footer>
+    </div>
+</body>
+</html>
